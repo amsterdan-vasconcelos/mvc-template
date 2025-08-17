@@ -1,0 +1,13 @@
+{
+    "name": "amsterdan/mvc",
+    "description": "MVC structure",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Amsterdan Vasconcelos",
+            "email": "amsterdan.email@gmail.com"
+        }
+    ],
+    "require": {}
+}
