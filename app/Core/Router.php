@@ -1,8 +1,8 @@
 <?php
 
-require_once '../app/controllers/HomeController.php';
-require_once '../app/controllers/NewsController.php';
-require_once '../app/controllers/errors/HttpErrorController.php';
+namespace App\Core;
+
+use App\Controllers\Errors\HttpErrorController;
 
 class Router
 {
@@ -12,7 +12,8 @@ class Router
     $parts = $url ? explode('/', $url) : [];
 
     $controllerName = $parts[0] ?? 'home';
-    $controllerName = ucfirst($controllerName) . 'Controller';
+    $controllerName =
+      "App\Controllers\\" . ucfirst($controllerName) . 'Controller';
 
     if (!class_exists($controllerName)) {
       (new HttpErrorController())->notFound();

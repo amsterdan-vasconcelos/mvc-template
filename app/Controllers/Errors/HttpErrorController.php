@@ -1,6 +1,8 @@
 <?php
 
-require_once __DIR__ . '/../../core/Controller.php';
+namespace App\Controllers\Errors;
+
+use App\Core\Controller;
 
 class HttpErrorController extends Controller
 {
