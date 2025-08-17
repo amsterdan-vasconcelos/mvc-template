@@ -1,13 +1,18 @@
 {
-    "name": "amsterdan/mvc",
-    "description": "MVC structure",
-    "type": "project",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Amsterdan Vasconcelos",
-            "email": "amsterdan.email@gmail.com"
-        }
-    ],
-    "require": {}
+  "name": "amsterdan/mvc",
+  "description": "MVC structure",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "app\\": "app/"
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Amsterdan Vasconcelos",
+      "email": "amsterdan.email@gmail.com"
+    }
+  ],
+  "require": {}
 }
